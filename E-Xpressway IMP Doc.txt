@@ -1,0 +1,221 @@
+Application Server Production with IIS Deployment
+------------------------------------------------------------------------------------
+E-Xpressway    103.233.76.183:41798    administrator\E#xPw@y756$
+
+--------------------------------------------------------------------
+
+
+SVN
+Dev & QA
+https://192.168.0.6:9443/svn/NIT/e-xpressway/branches/DEV_MT
+
+UAT
+https://192.168.0.6:9443/svn/NIT/e-xpressway/branches/UAT_MT
+
+PROD
+https://192.168.0.6:9443/svn/NIT/e-xpressway/branches/Production_MT
+
+
+KT Documents
+https://192.168.0.6:9443/svn/NIT/e-xpressway/KT
+
+Whole e-Xpressway (LDB / ICICI / etc.,)
+https://192.168.0.6:9443/svn/NIT/e-xpressway
+
+
+
+
+
+192.168.0.238 
+192.168.0.234
+192.168.0.237
+192.168.1.210
+192.168.0.80 
+192.168.2.93
+192.168.0.225
+192.168.0.158
+
+@supporT32$
+
+
+Express@321$$
+
+
+  <add name="UserContext" connectionString="Server=103.231.40.152; Database=usam; Uid=appluser; Pwd=Navayuga123$;" 
+192.168.2.95 	- KPCT Report Builder DEV- SQL Server
+
+-- Dev
+
+IP:		192.168.2.93 
+userid: 	administrator
+password: 	navayuga321$
+
+
+
+DB: 		192.168.3.56 port: 3306
+userid: 	appl
+password: 	appl
+
+-- QA
+
+IP: 		192.168.0.238 
+userid: 	administrator
+password: 	   @nava1715      -old  navayuga123$
+
+DB: 		192.168.1.210 port: 3306
+userid: 	appluser
+password: 	Navayuga123$
+
+
+RABIT MQ : http://192.168.0.238:15672   eGate123$
+
+-- Automation
+
+IP: 		192.168.0.237 
+userid: 	administrator
+password: 	cmminit
+
+DB: 		192.168.0.80 port: 3306
+userid: 	appl
+password: 	navayuga
+
+
+-- UAT
+
+
+IP: 		192.168.0.234 
+userid: 	administrator
+password: 	navayuga@123$
+
+DB: 		192.168.0.238 port: 3306
+userid: 	appl
+password: 	eXpWay@123$
+
+RABIT MQ : http://192.168.0.234:15672   eXpressway123$
+
+
+Hostname : NAVAYUGA63615
+Username : serveradmin
+Password : CLQ5TuvckEd934c$
+IP Address : 103.233.76.206:33893
+DB: 		103.233.76.206 port: 3306
+userid: 	applexpway
+password: 	$upportTe@m11o7
+
+
+sage it
+KPCT-VPN:
+srinivas.m
+Srinivas232$
+---------------
+username:srinivasm
+
+password:sri123$
+
+-----------------------
+2a884442-c993-4c78-b3f4-80ec0b8f4cc1
+10.10.16.16
+srinivasulu.m
+kpcl789$
+
+172.168.10.104
+10.10.16.22
+srinivasulu.m
+eXpway2017
+
+uat
+10.10.9.191
+
+
+--------------------------------------------------------
+10.10.17.57   - Cargo
+cargo
+Kpcl789$
+  <add name="UserContext" connectionString="Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.10.16.104)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=NAVPORTU)));Persist Security Info=True;User ID=cargo;Password=cargo" providerName="Oracle.ManagedDataAccess.Client" />
+  
+http://192.168.0.238:7766
+
+MSTO
+MSK(VOA)
+MSCOA
+MSCHA
+MSMR
+MSGO (edited)
+SDSTEAM
+CUSTOMS
+MSCFS (edited)
+
+Hostname : NAVAYUGA63615
+Username : serveradmin
+Password : CLQ5TuvckEd934c$
+IP Address : 103.233.76.206:33893
+
+
+
+http://183.82.3.15:7765/api/CaptureDamageContainerDetails
+http://183.82.3.15:7763/identity/connect/token
+EXPWAY.EXPWAY.OAUTH.Hawkeye
+Navayuga123$
+portkonnect.expway.resscope
+
+
+
+
+Sumanth 27-12-2018
+------------------------------------
+SQL Server Details:
+username : sa
+pwd: 123456
+Server IP: 10.10.17.22(KPCT/TDRUAT) - kpcl location
+
+
+
+(HOST = 10.10.16.105)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = EPMSBLD))) - NRPT
+(HOST = 10.10.16.112)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME =NAVISLST))) - NavisUAT
+(HOST = 10.10.16.110)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = NAVISDB))) - Navis Live
+
+Navis Pull service App settings
+
+  <appSettings>
+    <add key="Url" value="https://api.e-xpressway.com/" />
+    <add key="defaultSchema" value="NRPT" />
+    <add key="DefaultFileuploadPath" value="D:\FileUpload\" />
+    <add key="TimeInterval" value="30000" />
+    <add key="ClientSettingsProvider.ServiceUri" value="http://api.smscountry.com/SMSCwebservice_bulk.aspx?" />
+    <add key="TokenEndPoint" value="https://uamids.e-xpressway.com/identity/connect/token" />
+  </appSettings>
+
+
+  <connectionStrings>
+    <add name="NavisContext" connectionString="Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.10.16.105)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=EPMSBLD)));Persist Security Info=True;User ID=NRPT;Password=nrpt" providerName="Oracle.ManagedDataAccess.Client"/>
+    <add name="OracleDbContext" providerName="Oracle.ManagedDataAccess.Client" connectionString="User Id=oracle_user;Password=oracle_user_password;Data Source=oracle" />
+  </connectionStrings>
+
+
+Navis integration service(Post)
+  <appSettings>
+    <add key="eGateApiUrl" value="https://api.e-xpressway.com/" />
+    <add key="NavisCreditionals" value="GMEDIA:gm12345" />
+    <add key="TimeInterval" value="10000" />
+    <add key="TokenEndPoint" value="https://uamids.e-xpressway.com/identity/connect/token" />
+    <add key="navisUrl" value="http://10.10.16.136:10080/apex/services/argobasicservice" />
+  </appSettings>
+
+
+
+Report Builder Connections
+
+ <connectionType value="System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <connectionString value="Data Source=NAVISTEST-3;Initial Catalog=KPCT;Integrated Security=False;User=sa;Password=123456;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;MultipleActiveResultSets=True" providerName="System.Data.SqlClient" />
+      <add name="ConnectionInfo" connectionString="Data Source=NAVISDB;User ID=navis;password=navislst;Pooling=true;Connection Lifetime=30;Min Pool Size=5;Max Pool Size=60" providerName="System.Data.OracleClient"/>
+      <add name="OraConnection" connectionString="Data Source=EPMSBLD;User ID=nrpt;password=nrpt;Pooling=true;Connection Lifetime=30;Min Pool Size=5;Max Pool Size=60" providerName="System.Data.OracleClient"/>
+
+
+Multitenant e-Xpressway Services at KPCL Server
+
+C:\inetpub\wwwroot\MT_Services
+
+eGateServices - Pull service
+Navis Integration Service - Navis Post 
+    
+
