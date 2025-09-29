@@ -1,8 +1,5 @@
-Application Server Production with IIS Deployment
-------------------------------------------------------------------------------------
-E-Xpressway    103.233.76.183:41798    administrator\E#xPw@y756$
 
---------------------------------------------------------------------
+E-Xpressway    103.233.76.183:41798    administrator\E#xPw@y756$
 
 
 SVN
